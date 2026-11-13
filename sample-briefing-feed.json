@@ -1,0 +1,14 @@
+{
+  "publishedAt": "2026-11-13T09:00:00-07:00",
+  "title": "AI Voice & TTS News Briefing",
+  "summary": "A concise overview of meaningful developments in AI dubbing, multilingual localization, voice synthesis, pronunciation tools, and enterprise workflows.",
+  "articles": [
+    {
+      "title": "Example headline from the briefing publisher",
+      "url": "https://example.com/news/article",
+      "source": "Example News Source",
+      "publishedAt": "2026-11-13T08:30:00-07:00",
+      "summary": "A short summary explaining the development and its relevance to a video localization team."
+    }
+  ]
+}

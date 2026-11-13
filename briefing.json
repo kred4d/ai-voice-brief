@@ -1,14 +1,42 @@
 {
-  "publishedAt": "2026-11-13T09:00:00-07:00",
+  "publishedAt": "2026-11-13T15:17:47-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "GitHub connection test successful.",
+  "summary": "ElevenLabs launched Dub & Sync (25-language dubbing with lip sync, alpha, 2-minute clips) and confirmed all default voices retire Dec 31, 2026. Also new: ElevenLabs contact-center integrations and linguist review in Ads Engine, Salesforce's open SOV-Transcribe-1 speech-recognition model, and ElevenLabs voice restoration expanding to music.",
   "articles": [
     {
-      "title": "Example headline from the briefing publisher",
-      "url": "https://example.com/news/article",
-      "source": "Example News Source",
-      "publishedAt": "2026-11-13T08:30:00-07:00",
-      "summary": "A short summary explaining the development and its relevance to a video localization team."
+      "title": "ElevenLabs launches Dub & Sync: one-step dubbing with lip sync in 25 languages",
+      "url": "https://www.youtube.com/watch?v=ecuwiQ2z7sI",
+      "source": "ElevenLabs (official launch video)",
+      "publishedAt": "2026-11-12",
+      "summary": "New ElevenCreative app dubs a video and matches lip movement in a single pass for 25 languages (standard dubbing still covers 90+). Reviewers report it is an alpha capped at 2-minute clips; no pricing published. Why it matters: ElevenLabs' first combined dub-plus-lip-sync product, competing directly with HeyGen; pilot on short clips, and secure on-screen speaker consent and AI disclosure."
+    },
+    {
+      "title": "ElevenLabs default voices retire December 31, 2026",
+      "url": "https://elevenlabs.io/docs/help-center/product/voices/my-voices/what-are-default-voices",
+      "source": "ElevenLabs Help Center",
+      "publishedAt": "2026-10-14",
+      "summary": "All ElevenLabs default voices (e.g., Roger, Sarah, George, Brian, Daniel) expire Dec 31, 2026; suggested replacements are not exact matches. TechSmith confirmed the notice Oct 14; existing outputs keep working but no new audio can be generated. Why it matters: projects, scripts and third-party tools using these voices will break in January; inventory usage and test replacements per language now for pronunciation and tone consistency."
+    },
+    {
+      "title": "ElevenLabs adds contact-center integrations and linguist review in Ads Engine",
+      "url": "https://www.scriptbyai.com/elevenlabs-timeline/",
+      "source": "ScriptByAI ElevenLabs release timeline",
+      "publishedAt": "2026-11-04",
+      "summary": "Nov 4: ElevenLabs voice agents connect natively to NiCE CXone, Genesys Cloud, Amazon Connect and Five9. Nov 6: Ads Engine adds human review so linguists can check translated copy and dubbed audio. Why it matters: a vendor building linguist review into AI dubbing is a useful model for quality checks on AI output. Secondary source; verify against ElevenLabs' changelog."
+    },
+    {
+      "title": "Salesforce releases SOV-Transcribe-1, an open speech-recognition model",
+      "url": "https://www.nocode.mba/ai-release-tracker/2026/11",
+      "source": "No Code MBA AI release tracker",
+      "publishedAt": "2026-11-12",
+      "summary": "Open-weight multilingual model for recorded audio, with plain-language formatting instructions and custom-term boosting. Why it matters: transcripts are the first step of dubbing; a self-hostable model with term boosting could improve names and specialized vocabulary. Secondary source; benchmark against current vendor."
+    },
+    {
+      "title": "ElevenLabs expands voice restoration to music",
+      "url": "https://www.scriptbyai.com/elevenlabs-timeline/",
+      "source": "ScriptByAI ElevenLabs release timeline",
+      "publishedAt": "2026-11-12",
+      "summary": "People with permanent voice loss get free ElevenMusic access to create songs in their own voice; NYU Langone Health and Wounded Warrior Project join as partners. Why it matters: a minor but clear example of consent-based voice preservation."
     }
   ]
 }

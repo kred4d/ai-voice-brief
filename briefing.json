@@ -1,42 +1,21 @@
 {
-  "publishedAt": "2026-11-13T15:17:47-07:00",
+  "publishedAt": "2026-11-16T07:52:42-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "ElevenLabs launched Dub & Sync (25-language dubbing with lip sync, alpha, 2-minute clips) and confirmed all default voices retire Dec 31, 2026. Also new: ElevenLabs contact-center integrations and linguist review in Ads Engine, Salesforce's open SOV-Transcribe-1 speech-recognition model, and ElevenLabs voice restoration expanding to music.",
+  "summary": "Covers Fri Nov 13, 3:37 PM to Mon Nov 16, 7:52 AM MT. A quiet weekend: no major launches. Two Nov 13 developments not previously reported: KittenML's free Apache-2.0 KittenTTS 2 Mini/Nano/Pico on-device models (up to 16 languages incl. Hindi and Swahili) and ElevenLabs' Forward Deployed Creatives managed localization service with linguist review. Reminder: Google's Gemini TTS/Live preview models shut down Nov 17 with no redirect.",
   "articles": [
     {
-      "title": "ElevenLabs launches Dub & Sync: one-step dubbing with lip sync in 25 languages",
-      "url": "https://<scrubbed-url-domain>/watch?v=ecuwiQ2z7sI",
-      "source": "ElevenLabs (official launch video)",
-      "publishedAt": "2026-11-12",
-      "summary": "New ElevenCreative app dubs a video and matches lip movement in a single pass for 25 languages (standard dubbing still covers 90+). Reviewers report it is an alpha capped at 2-minute clips; no pricing published. Why it matters: ElevenLabs' first combined dub-plus-lip-sync product, competing directly with HeyGen; pilot on short clips, and secure on-screen speaker consent and AI disclosure."
+      "title": "KittenML releases KittenTTS 2 Mini, Nano and Pico: free on-device TTS in up to 16 languages",
+      "url": "https://huggingface.co/KittenML/kitten-tts-2-mini",
+      "source": "KittenML (Hugging Face model card)",
+      "publishedAt": "2026-11-13T03:34:00Z",
+      "summary": "Three small Apache-2.0 TTS models that run on a CPU: Mini (82M parameters, ~83 MB, 16 languages incl. Hindi, Swahili, Japanese, Korean, Turkish; 118 voices), Nano and Pico (8 languages, 8-17 MB). No voice cloning and no published quality scores yet. Why it matters: a commercially usable, offline option for multilingual narration prototypes and devices without cloud costs or data leaving the network; quality in each language must be tested before production use."
     },
     {
-      "title": "ElevenLabs default voices retire December 31, 2026",
-      "url": "https://<scrubbed-url-domain>/docs/help-center/product/voices/my-voices/what-are-default-voices",
-      "source": "ElevenLabs Help Center",
-      "publishedAt": "2026-10-14",
-      "summary": "All ElevenLabs default voices (e.g., Roger, Sarah, George, Brian, Daniel) expire Dec 31, 2026; suggested replacements are not exact matches. TechSmith confirmed the notice Oct 14; existing outputs keep working but no new audio can be generated. Why it matters: projects, scripts and third-party tools using these voices will break in January; inventory usage and test replacements per language now for pronunciation and tone consistency."
-    },
-    {
-      "title": "ElevenLabs adds contact-center integrations and linguist review in Ads Engine",
-      "url": "https://<scrubbed-url-domain>/elevenlabs-timeline/",
-      "source": "ScriptByAI ElevenLabs release timeline",
-      "publishedAt": "2026-11-04",
-      "summary": "Nov 4: ElevenLabs voice agents connect natively to NiCE CXone, Genesys Cloud, Amazon Connect and Five9. Nov 6: Ads Engine adds human review so linguists can check translated copy and dubbed audio. Why it matters: a vendor building linguist review into AI dubbing is a useful model for quality checks on AI output. Secondary source; verify against ElevenLabs' changelog."
-    },
-    {
-      "title": "Salesforce releases SOV-Transcribe-1, an open speech-recognition model",
-      "url": "https://<scrubbed-url-domain>/ai-release-tracker/2026/11",
-      "source": "No Code MBA AI release tracker",
-      "publishedAt": "2026-11-12",
-      "summary": "Open-weight multilingual model for recorded audio, with plain-language formatting instructions and custom-term boosting. Why it matters: transcripts are the first step of dubbing; a self-hostable model with term boosting could improve names and specialized vocabulary. Secondary source; benchmark against current vendor."
-    },
-    {
-      "title": "ElevenLabs expands voice restoration to music",
-      "url": "https://<scrubbed-url-domain>/elevenlabs-timeline/",
-      "source": "ScriptByAI ElevenLabs release timeline",
-      "publishedAt": "2026-11-12",
-      "summary": "People with permanent voice loss get free ElevenMusic access to create songs in their own voice; NYU Langone Health and Wounded Warrior Project join as partners. Why it matters: a minor but clear example of consent-based voice preservation."
+      "title": "ElevenLabs launches Forward Deployed Creatives, a managed service for enterprise localization and creative production",
+      "url": "https://www.plushcap.com/companies/elevenlabs/blog/summaries/2026/11",
+      "source": "ElevenLabs blog (via Plushcap summary)",
+      "publishedAt": "2026-11-13",
+      "summary": "ElevenLabs now pairs creative staff with enterprise teams to move AI creative work from pilots into production, or delivers finished campaigns, with linguists and audio specialists reviewing localized material and support for dubbing, voiceover, subtitles, audio description and custom voices. Why it matters: AI voice vendors are now selling managed localization with human review, competing with traditional language service providers; a benchmark for pricing and quality-control expectations. Summary source; original ElevenLabs post could not be retrieved."
     }
   ]
 }

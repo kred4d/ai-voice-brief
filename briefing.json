@@ -1,21 +1,14 @@
 {
-  "publishedAt": "2026-11-17T07:52:42-07:00",
+  "publishedAt": "2026-11-17T08:44:23-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "Covers Mon Nov 16, 7:52 AM to Tue Nov 17, 7:52 AM MT. Two new developments: ElevenLabs is acquiring Kotoba Technologies, maker of the Koto Japanese TTS, speech recognition and speech-to-speech interpretation models (HIGH IMPACT); and France's CNC no longer funds AI-only dubbing, subtitling or audio description (in force Nov 1; first reported here). Today Google shuts down five preview Gemini voice models.",
+  "summary": "Covers Tue Nov 17, 7:52 AM to 8:44 AM MT. One new development: AssemblyAI made its AssemblyAI-STT-3.7 speech recognition family generally available, expanding pre-recorded transcription from 18 to 32 languages with native code-switching and a new speaker-separation model claimed to cut errors 29%, at an unchanged $0.21 per hour. It matters mainly as the transcript and speaker-labeling step that feeds dubbing and subtitling. Earlier today's stories (ElevenLabs-Kotoba, France's CNC rule) remain in the Nov 17 7:52 AM briefing.",
   "articles": [
     {
-      "title": "HIGH IMPACT: ElevenLabs to acquire Kotoba, Japan's Koto voice AI lab",
-      "url": "https://elevenlabs.io/blog/kotoba",
-      "source": "ElevenLabs blog",
-      "publishedAt": "2026-11-16",
-      "summary": "ElevenLabs agreed to acquire Kotoba Technologies, whose Koto model handles Japanese text-to-speech, speech-to-text and speech-to-speech for simultaneous interpretation and already powers Japanese conversations in Salesforce Agentforce Voice. Closing is expected later in Q4 2026; terms not disclosed (press reports of about $100M are unconfirmed). Kotoba plans to improve Japanese first, then Korean and other East Asian languages. Why it matters: Japanese and Korean quality (pitch accent, honorifics, mixed scripts, name reading) should improve in a major TTS/dubbing vendor, and the move signals vendors are buying language-specific depth rather than relying on one global model; re-test Japanese output after the deal closes."
-    },
-    {
-      "title": "France's CNC stops funding AI-only dubbing, subtitling and audio description",
-      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055037492",
-      "source": "Journal officiel (Légifrance), CNC deliberation 2026/CA/28; reported by Slator Nov 16",
-      "publishedAt": "2026-10-31",
-      "summary": "Under a new rule in force Nov 1 for new funding applications, France's national film and media agency counts only payments to human script writers, voice actors and subtitle authors, plus related recording, mixing and sync costs, toward subsidized dubbing, voice-over, audio description and subtitling. AI tools are not banned, but AI-only localization gets no public money. French dubbing groups call it a first step and want it extended to foreign films and streamers. Why it matters: the first national public-funding rule tying dubbing and audio-description support to human performers, a template other European funders and unions may push; human-in-the-loop documentation is becoming a funding and contract requirement. Previously missed; first reported here."
+      "title": "AssemblyAI-STT-3.7 goes GA: 32 languages, code-switching and improved speaker separation at the same price",
+      "url": "https://www.assemblyai.com/blog/assemblyai-stt-3-7-research",
+      "source": "AssemblyAI blog",
+      "publishedAt": "2026-11-17",
+      "summary": "AssemblyAI released AssemblyAI-STT-3.7, replacing its Universal models for recorded audio: 32 languages (up from 18; the set includes Hindi, Urdu, Marathi, Persian, Hebrew, Vietnamese, Xhosa and Zulu), automatic language detection, native handling of speakers switching languages mid-sentence, and a new speaker-diarization model with a vendor-claimed 29% lower diarization error rate, still $0.21 per hour. Two live variants ($0.30 and $0.45 per hour) cover captions and voice agents. Universal-3.5 Pro is deprecated and will auto-route to 3.7. Why it matters: dubbing and subtitling start with a transcript that labels who spoke; better diarization and code-switching reduce manual cleanup on interviews and multi-speaker video. Accuracy figures are AssemblyAI's own; benchmark on your own audio, and note languages outside the 32 still need the older Universal-2 model."
     }
   ]
 }

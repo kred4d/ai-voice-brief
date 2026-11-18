@@ -1,14 +1,21 @@
 {
-  "publishedAt": "2026-11-17T08:44:23-07:00",
+  "publishedAt": "2026-11-18T07:52:44-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "Covers Tue Nov 17, 7:52 AM to 8:44 AM MT. One new development: AssemblyAI made its AssemblyAI-STT-3.7 speech recognition family generally available, expanding pre-recorded transcription from 18 to 32 languages with native code-switching and a new speaker-separation model claimed to cut errors 29%, at an unchanged $0.21 per hour. It matters mainly as the transcript and speaker-labeling step that feeds dubbing and subtitling. Earlier today's stories (ElevenLabs-Kotoba, France's CNC rule) remain in the Nov 17 7:52 AM briefing.",
+  "summary": "Covers Tue Nov 17, 8:44 AM to Wed Nov 18, 7:52 AM MT. Two new developments. Microsoft launched MAI Realtime 1 at Ignite, its first speech-to-speech model, priced from $0.01 per audio minute and compatible with the OpenAI Realtime API (limited preview). DeepL's Aure voice model, announced Nov 11 but missed in earlier briefings, carries a speaker's own voice, tone and pacing into live translated speech in 8 languages, including through the DeepL Voice API. Both mainly affect live and conversational voice; neither changes recorded-video dubbing workflows yet.",
   "articles": [
     {
-      "title": "AssemblyAI-STT-3.7 goes GA: 32 languages, code-switching and improved speaker separation at the same price",
-      "url": "https://www.assemblyai.com/blog/assemblyai-stt-3-7-research",
-      "source": "AssemblyAI blog",
+      "title": "Microsoft launches MAI Realtime 1, its first speech-to-speech model, from $0.01 per audio minute",
+      "url": "https://microsoft.ai/news/introducing-mai-realtime-1/",
+      "source": "Microsoft AI",
       "publishedAt": "2026-11-17",
-      "summary": "AssemblyAI released AssemblyAI-STT-3.7, replacing its Universal models for recorded audio: 32 languages (up from 18; the set includes Hindi, Urdu, Marathi, Persian, Hebrew, Vietnamese, Xhosa and Zulu), automatic language detection, native handling of speakers switching languages mid-sentence, and a new speaker-diarization model with a vendor-claimed 29% lower diarization error rate, still $0.21 per hour. Two live variants ($0.30 and $0.45 per hour) cover captions and voice agents. Universal-3.5 Pro is deprecated and will auto-route to 3.7. Why it matters: dubbing and subtitling start with a transcript that labels who spoke; better diarization and code-switching reduce manual cleanup on interviews and multi-speaker video. Accuracy figures are AssemblyAI's own; benchmark on your own audio, and note languages outside the 32 still need the older Universal-2 model."
+      "summary": "At Ignite, Microsoft AI introduced MAI Realtime 1, a live speech-to-speech model for voice agents that handles interruptions, background noise and tool use, with personas set by prompting. It starts at $0.01 per audio minute (reasoning billed separately), is compatible with the OpenAI Realtime API, and is coming to Dynamics 365 Contact Center; it is in MAI Labs and a limited-access Foundry preview, unbilled until public preview. Microsoft says it beats GPT-Realtime 2.1 on quality, speed and price, by its own evaluations. Why it matters: it sharply lowers the cost floor for live multilingual voice experiences on Azure, but Microsoft has not published a language list, voice-cloning or pronunciation controls, so it is not yet a dubbing tool; test language quality before planning around it."
+    },
+    {
+      "title": "DeepL's Aure carries a speaker's own voice and expression into live translated speech (missed earlier)",
+      "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
+      "source": "DeepL",
+      "publishedAt": "2026-11-11",
+      "summary": "DeepL unveiled Aure, a new model behind DeepL Voice that continuously adapts translated speech to the speaker's changing tone, emphasis and pace, in the speaker's own voice, instead of matching a single opening voice sample. It works in English, German, Spanish, French, Italian, Japanese, Portuguese and Korean across DeepL Voice for meetings, in-person use and the DeepL Voice API; DeepL says no voice profile is stored. Announced Nov 11 and missed in earlier briefings; Slator covered it Nov 17. Why it matters: expressive, voice-preserving speech translation from a major translation vendor, with an API, points toward live interpretation of meetings and events in the speaker's voice. Quality claims are DeepL's own, and consent and disclosure rules still apply to voice-matched output."
     }
   ]
 }

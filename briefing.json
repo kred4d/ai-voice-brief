@@ -1,21 +1,21 @@
 {
-  "publishedAt": "2026-11-18T07:52:44-07:00",
+  "publishedAt": "2026-11-19T07:52:48-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "Covers Tue Nov 17, 8:44 AM to Wed Nov 18, 7:52 AM MT. Two new developments. Microsoft launched MAI Realtime 1 at Ignite, its first speech-to-speech model, priced from $0.01 per audio minute and compatible with the OpenAI Realtime API (limited preview). DeepL's Aure voice model, announced Nov 11 but missed in earlier briefings, carries a speaker's own voice, tone and pacing into live translated speech in 8 languages, including through the DeepL Voice API. Both mainly affect live and conversational voice; neither changes recorded-video dubbing workflows yet.",
+  "summary": "Covers Wed Nov 18, 7:52 AM to Thu Nov 19, 7:52 AM MT. Two new developments, both dated Nov 17 and not covered in earlier briefings. HeyGen released Avatar 6, which generates presenter video in a person's own voice from a photo and can re-voice single edited words while leaving the rest of a recording untouched. ElevenLabs added a beta API that checks audio for its watermark, cut speech-to-text prices for self-serve and Business plans, and added pronunciation-rule highlighting in Studio. The watermark check arrives two weeks before the EU's Dec 2 deadline for marking AI-generated audio.",
   "articles": [
     {
-      "title": "Microsoft launches MAI Realtime 1, its first speech-to-speech model, from $0.01 per audio minute",
-      "url": "https://microsoft.ai/news/introducing-mai-realtime-1/",
-      "source": "Microsoft AI",
+      "title": "HeyGen Avatar 6: presenter video in the person's own voice, with word-level edits that leave the rest of the take untouched (missed earlier)",
+      "url": "https://www.heygen.com/research/avatar-6-model",
+      "source": "HeyGen Research",
       "publishedAt": "2026-11-17",
-      "summary": "At Ignite, Microsoft AI introduced MAI Realtime 1, a live speech-to-speech model for voice agents that handles interruptions, background noise and tool use, with personas set by prompting. It starts at $0.01 per audio minute (reasoning billed separately), is compatible with the OpenAI Realtime API, and is coming to Dynamics 365 Contact Center; it is in MAI Labs and a limited-access Foundry preview, unbilled until public preview. Microsoft says it beats GPT-Realtime 2.1 on quality, speed and price, by its own evaluations. Why it matters: it sharply lowers the cost floor for live multilingual voice experiences on Azure, but Microsoft has not published a language list, voice-cloning or pronunciation controls, so it is not yet a dubbing tool; test language quality before planning around it."
+      "summary": "HeyGen released Avatar 6, an avatar model that builds a talking presenter from one photo (optionally plus a short recording), at up to 2K with no fixed length, and voices it with HeyGen Voice in the person's own voice. Gestures follow the script or written motion cues, two speakers can share one frame, and an editor can replace individual words in a recorded video, regenerating only that span in the speaker's voice. It is available in the web app, mobile app and API, with consent checks for realistic video references. HeyGen says raters judged it 84.4% indistinguishable from real footage in side-by-side tests, by its own evaluation. Why it matters: correcting a line in finished presenter video without a reshoot could cut revision cycles in localized training and message video. Independent arena tests covered only short English-centric clips, so long-form, multilingual lip-sync quality and consent policy should be checked before use."
     },
     {
-      "title": "DeepL's Aure carries a speaker's own voice and expression into live translated speech (missed earlier)",
-      "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
-      "source": "DeepL",
-      "publishedAt": "2026-11-11",
-      "summary": "DeepL unveiled Aure, a new model behind DeepL Voice that continuously adapts translated speech to the speaker's changing tone, emphasis and pace, in the speaker's own voice, instead of matching a single opening voice sample. It works in English, German, Spanish, French, Italian, Japanese, Portuguese and Korean across DeepL Voice for meetings, in-person use and the DeepL Voice API; DeepL says no voice profile is stored. Announced Nov 11 and missed in earlier briefings; Slator covered it Nov 17. Why it matters: expressive, voice-preserving speech translation from a major translation vendor, with an API, points toward live interpretation of meetings and events in the speaker's voice. Quality claims are DeepL's own, and consent and disclosure rules still apply to voice-matched output."
+      "title": "ElevenLabs adds a watermark-check API, cuts speech-to-text prices and highlights pronunciation rules in Studio",
+      "url": "https://elevenlabs.io/docs/changelog",
+      "source": "ElevenLabs changelog",
+      "publishedAt": "2026-11-17",
+      "summary": "ElevenLabs' Nov 17 release notes add a beta content-provenance endpoint that checks an uploaded audio file for an ElevenLabs watermark and, where possible, returns the product, model, generation time and a generation ID (never the prompt or account). Speech-to-text now costs $0.20 per hour for batch and $0.22 per hour for real-time on every Scribe model for self-serve and Business plans; Enterprise pricing is unchanged. Studio audiobook projects now highlight words matched by pronunciation rules and explain conflicts when several rules match. Why it matters: a way to verify whether audio came from ElevenLabs supports provenance checks and disclosure records ahead of the EU's Dec 2 marking deadline, and the pronunciation highlights make lexicon review easier for language reviewers. The watermark check is beta, ElevenLabs-only, and detection reliability after editing or re-encoding is not documented."
     }
   ]
 }

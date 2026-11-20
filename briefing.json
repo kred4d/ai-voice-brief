@@ -1,21 +1,129 @@
 {
-  "publishedAt": "2026-11-19T07:52:48-07:00",
+  "publishedAt": "2026-11-20T07:52:26-07:00",
   "title": "AI Voice & TTS News Briefing",
-  "summary": "Covers Wed Nov 18, 7:52 AM to Thu Nov 19, 7:52 AM MT. Two new developments, both dated Nov 17 and not covered in earlier briefings. HeyGen released Avatar 6, which generates presenter video in a person's own voice from a photo and can re-voice single edited words while leaving the rest of a recording untouched. ElevenLabs added a beta API that checks audio for its watermark, cut speech-to-text prices for self-serve and Business plans, and added pronunciation-rule highlighting in Studio. The watermark check arrives two weeks before the EU's Dec 2 deadline for marking AI-generated audio.",
-  "articles": [
+  "summary": "Covers Thu Nov 19, 7:52 AM to Fri Nov 20, 7:52 AM MT. Three new developments, all dated Nov 19. Amazon Polly made voice cloning generally available as a gated release in seven languages, with consent attestation and watermarked output, though each cloned voice speaks only its recording language. OpenAI brought GPT-Live-1.1 to its API with more consistent accents across languages and a cheaper standby rate. Murf now requires a spoken, speaker-matched consent recording before any voice clone. The common thread is consent: cloning vendors are building verifiable permission and provenance into the product.",
+  "coverageWindow": "Thursday, November 19, 2026, 7:52 AM MT to Friday, November 20, 2026, 7:52 AM MT",
+  "highlights": [
+    "Amazon Polly voice cloning (MEDIUM): a major cloud speech service now offers consent-gated cloning with watermarking in seven languages. It suits narration updates in one language, but each clone speaks only the language it was recorded in, so it is not a cross-lingual dubbing tool.",
+    "Consent is becoming a product feature: Polly requires a consent attestation for every voice and watermarks output, and Murf now requires a spoken consent statement matched to the speaker. Our talent release forms should keep pace.",
+    "OpenAI GPT-Live-1.1 in the API (LOW): more consistent accents across languages for live voice agents, plus a cheaper standby rate. Relevant to live experiences, not recorded dubbing."
+  ],
+  "teamRecommendations": [
+    "If we produce on AWS, request access to Polly voice cloning and test it with a consenting narrator on real scripts with names, scripture references and terminology; plan separate recordings and consent for each language.",
+    "Review our voice-talent release forms so they cover recording, cloning, each language, retention and deletion, and allow for a spoken consent statement, since vendors now require per-voice consent evidence.",
+    "No action is needed on GPT-Live-1.1 unless we plan live multilingual voice experiences."
+  ],
+  "minorItems": [
+    "PolyAI Dialog-RSN-1 on Amazon SageMaker JumpStart (Nov 19): a reasoning model for real-time voice dialog, now deployable in a customer's own AWS account. Voice-agent focused, not dubbing.",
+    "ElevenLabs–Kotoba price: Nikkei Asia reported that ElevenLabs is paying more than $100 million for Kotoba. The acquisition itself was reported earlier; neither company has disclosed the price."
+  ],
+  "watchItems": [
+    "HeyGen Avatar 6 press release (Nov 18): adds that existing personal avatars upgrade to Avatar 6 automatically and that avatars can be built from about 30 seconds of video or from linked social accounts. Anyone with HeyGen avatars of staff should confirm the consent scope covers the upgraded model.",
+    "NO FAKES Act: still awaiting a full Senate vote; it lapses on January 3, 2027 if not enacted.",
+    "EU AI Act Article 50: the grace period for marking AI-generated audio ends December 2. Polly's and ElevenLabs' watermarks are relevant to compliance evidence."
+  ],
+  "excludedItems": [
+    "Previously reported: HeyGen Avatar 6 (core launch), ElevenLabs Nov 17 release notes (watermark check, speech-to-text price cut, pronunciation highlights), MAI Realtime 1, DeepL Aure, AssemblyAI-STT-3.7, ElevenLabs Dub & Sync, Kotoba acquisition, Reson8 Rumble-2-Flash (minor item Nov 19).",
+    "Older announcements resurfacing: Amazon Polly generative engine upgrade (Oct 22), Azure LLM Speech 09-2026 (Oct 26), Gemini 3.8 TTS (Sep 23), LILT Converse speech translation controls (Nov 3, before briefings began), Adobe Firefly Translate Video pages.",
+    "Not new developments: TTS and dubbing rankings, buyer guides and comparison articles published Nov 18-20, and ElevenLabs customer stories and explainers.",
+    "No new announcements found from: Google, Microsoft, NVIDIA, Meta, Apple, Adobe, DeepL, CaptionHub, Centific, Ollang, Phrase, DeepDub, Dubformer, Rask AI, Respeecher, Papercup, Speechmatics or 3Play Media."
+  ],
+  "upcomingDeadlines": [
     {
-      "title": "HeyGen Avatar 6: presenter video in the person's own voice, with word-level edits that leave the rest of the take untouched (missed earlier)",
-      "url": "https://www.heygen.com/research/avatar-6-model",
-      "source": "HeyGen Research",
-      "publishedAt": "2026-11-17",
-      "summary": "HeyGen released Avatar 6, an avatar model that builds a talking presenter from one photo (optionally plus a short recording), at up to 2K with no fixed length, and voices it with HeyGen Voice in the person's own voice. Gestures follow the script or written motion cues, two speakers can share one frame, and an editor can replace individual words in a recorded video, regenerating only that span in the speaker's voice. It is available in the web app, mobile app and API, with consent checks for realistic video references. HeyGen says raters judged it 84.4% indistinguishable from real footage in side-by-side tests, by its own evaluation. Why it matters: correcting a line in finished presenter video without a reshoot could cut revision cycles in localized training and message video. Independent arena tests covered only short English-centric clips, so long-form, multilingual lip-sync quality and consent policy should be checked before use."
+      "date": "2026-11-21",
+      "event": "Speechify Voice API allowance cut",
+      "description": "Reported by a third party only; not confirmed by Speechify."
     },
     {
-      "title": "ElevenLabs adds a watermark-check API, cuts speech-to-text prices and highlights pronunciation rules in Studio",
-      "url": "https://elevenlabs.io/docs/changelog",
-      "source": "ElevenLabs changelog",
-      "publishedAt": "2026-11-17",
-      "summary": "ElevenLabs' Nov 17 release notes add a beta content-provenance endpoint that checks an uploaded audio file for an ElevenLabs watermark and, where possible, returns the product, model, generation time and a generation ID (never the prompt or account). Speech-to-text now costs $0.20 per hour for batch and $0.22 per hour for real-time on every Scribe model for self-serve and Business plans; Enterprise pricing is unchanged. Studio audiobook projects now highlight words matched by pronunciation rules and explain conflicts when several rules match. Why it matters: a way to verify whether audio came from ElevenLabs supports provenance checks and disclosure records ahead of the EU's Dec 2 marking deadline, and the pronunciation highlights make lexicon review easier for language reviewers. The watermark check is beta, ElevenLabs-only, and detection reliability after editing or re-encoding is not documented."
+      "date": "2026-11-26",
+      "event": "ElevenLabs voice-agent API server-side timeouts begin"
+    },
+    {
+      "date": "2026-11-30",
+      "event": "HeyGen Voice Turbo free API access ends"
+    },
+    {
+      "date": "2026-12-02",
+      "event": "EU AI Act Article 50 grace period for marking AI-generated audio ends"
+    },
+    {
+      "date": "2026-12-09",
+      "event": "Maxton Hall season 3 releases with AI lip sync"
+    },
+    {
+      "date": "2026-12-11",
+      "event": "ChatGPT Advanced and Standard voice modes retire"
+    },
+    {
+      "date": "2026-12-13",
+      "event": "Vertex AI gemini-live-2.5-flash-native-audio retires"
+    },
+    {
+      "date": "2026-12-31",
+      "event": "ElevenLabs default voices expire; Fish Audio S1 retires; Gemini 3.8 TTS introductory pricing ends"
+    },
+    {
+      "date": "2027-01-01",
+      "event": "California SB 1111 takes effect"
+    },
+    {
+      "date": "2027-01-03",
+      "event": "NO FAKES Act lapses if not enacted"
+    },
+    {
+      "date": "2027-01-06",
+      "event": "OpenAI tts-1, tts-1-hd and gpt-4o-mini-tts shut down"
+    },
+    {
+      "date": "2027-01-14",
+      "event": "ElevenLabs voice agents' GPT-4.x models shut down"
+    },
+    {
+      "date": "2027-02-01",
+      "event": "AssemblyAI Universal-3.5 Pro Realtime retires"
+    },
+    {
+      "date": "2027-03-01",
+      "event": "ElevenLabs eleven_text_to_sound_v2 removed"
+    }
+  ],
+  "researchCheckpoint": "2026-11-20T07:52:26-07:00",
+  "articles": [
+    {
+      "title": "Amazon Polly makes consent-gated voice cloning generally available in seven languages",
+      "url": "https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-polly/",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-19",
+      "summary": "On November 19, AWS made voice cloning in Amazon Polly generally available as a gated release: select customers already have it, and others must apply or ask their AWS account team. A customer submits 1 to 10 recordings of one consenting speaker, up to 15 minutes in total, and Polly builds a custom voice on its generative engine, typically in 5 to 10 minutes. Seven languages are supported at launch (English, Spanish, German, French, Italian, Portuguese and Hindi), but each cloned voice speaks only the language it was recorded in. Building a voice is free; synthesis is billed pay-as-you-go. Output carries a watermark, voices stay in the creating account and Region, and Polly does not keep the source recordings after the build. Why it matters: A major cloud speech service now offers consent-gated cloning with built-in watermarking, so an approved narrator's voice can be reused for script revisions, e-learning updates and long-form narration through an API many production pipelines already call. Because each clone is locked to its recording language, it is not a cross-lingual dubbing tool: keeping one presenter's voice across languages would need separate recordings and consent in each language. The consent attestation, watermark and immediate-deletion path line up with the consent records and disclosure duties a localization team needs under EU marking rules and US state digital-replica laws.",
+      "company": "Amazon Web Services",
+      "impact": "MEDIUM",
+      "whatHappened": "On November 19, AWS made voice cloning in Amazon Polly generally available as a gated release: select customers already have it, and others must apply or ask their AWS account team. A customer submits 1 to 10 recordings of one consenting speaker, up to 15 minutes in total, and Polly builds a custom voice on its generative engine, typically in 5 to 10 minutes. Seven languages are supported at launch (English, Spanish, German, French, Italian, Portuguese and Hindi), but each cloned voice speaks only the language it was recorded in. Building a voice is free; synthesis is billed pay-as-you-go. Output carries a watermark, voices stay in the creating account and Region, and Polly does not keep the source recordings after the build.",
+      "whyItMatters": "A major cloud speech service now offers consent-gated cloning with built-in watermarking, so an approved narrator's voice can be reused for script revisions, e-learning updates and long-form narration through an API many production pipelines already call. Because each clone is locked to its recording language, it is not a cross-lingual dubbing tool: keeping one presenter's voice across languages would need separate recordings and consent in each language. The consent attestation, watermark and immediate-deletion path line up with the consent records and disclosure duties a localization team needs under EU marking rules and US state digital-replica laws.",
+      "assessment": "Confirmed by AWS's own announcement; the claim that cloned voices match the naturalness and accuracy of stock generative voices is AWS's assessment, not independent testing. Access is gated, and AWS published no approval criteria or timeline. Production limits matter: 10 cloned voices per account per Region at first, one delivery style per voice (upbeat and serious takes cannot be blended), slight variation between synthesis runs, and less testing on accents such as British English or Canadian French. The per-character price for cloned-voice synthesis was not stated in the coverage reviewed; check the Polly pricing page before budgeting."
+    },
+    {
+      "title": "OpenAI brings GPT-Live-1.1 to the API, with more consistent accents across languages and a cheaper standby rate",
+      "url": "https://community.openai.com/t/gpt-live-1-1-has-arrived-in-the-api/1418537",
+      "source": "OpenAI Developer Community (official announcement)",
+      "publishedAt": "2026-11-19",
+      "summary": "OpenAI made GPT-Live-1.1, the full-duplex voice model that has powered voice in ChatGPT Plus and Pro since October 15, available in its API under the model ID gpt-live-1.1. OpenAI says it speaks with more natural and consistent accents across languages, understands letters and numbers more precisely, transcribes speech more accurately than GPT-Live-1, and completes tasks more reliably. A new standby setting, for both GPT-Live-1 and 1.1, pauses the model after 5 to 60 seconds of silence while the call stays open; standby is billed at $0.02 per minute versus $0.05 when active, with backend reasoning and tools billed separately. The ChatGPT launch was reported earlier; the new development is API availability and pricing. Why it matters: More consistent accent and voice across languages addresses a known weakness of live multilingual voice agents, where the voice can drift when the conversation changes language. For a localization team this matters mainly for live or interactive experiences such as help lines, guided tours or language-practice tools, not recorded dubbing: the announcement mentions no voice cloning or pronunciation controls. The standby rate lowers the cost of long sessions with idle time.",
+      "company": "OpenAI",
+      "impact": "LOW",
+      "whatHappened": "OpenAI made GPT-Live-1.1, the full-duplex voice model that has powered voice in ChatGPT Plus and Pro since October 15, available in its API under the model ID gpt-live-1.1. OpenAI says it speaks with more natural and consistent accents across languages, understands letters and numbers more precisely, transcribes speech more accurately than GPT-Live-1, and completes tasks more reliably. A new standby setting, for both GPT-Live-1 and 1.1, pauses the model after 5 to 60 seconds of silence while the call stays open; standby is billed at $0.02 per minute versus $0.05 when active, with backend reasoning and tools billed separately. The ChatGPT launch was reported earlier; the new development is API availability and pricing.",
+      "whyItMatters": "More consistent accent and voice across languages addresses a known weakness of live multilingual voice agents, where the voice can drift when the conversation changes language. For a localization team this matters mainly for live or interactive experiences such as help lines, guided tours or language-practice tools, not recorded dubbing: the announcement mentions no voice cloning or pronunciation controls. The standby rate lowers the cost of long sessions with idle time.",
+      "assessment": "The quality improvements are OpenAI's own claims; the announcement published no language list or independent multilingual results. API availability is confirmed by OpenAI's official developer-forum announcement and the model documentation page; we did not find a separate blog post. The forum post's timestamp falls late on November 19 in US time zones. With no custom-voice or consent features described, it does not change voice-preservation workflows."
+    },
+    {
+      "title": "Murf requires a spoken, speaker-matched consent recording before any voice clone",
+      "url": "https://murf.ai/api/docs/changelog/2026/11/19",
+      "source": "Murf API changelog",
+      "publishedAt": "2026-11-19",
+      "summary": "Murf's November 19 API release notes add three changes. Creating a voice clone now requires a short recording of the speaker reading a fixed consent statement saying it is their own voice and that they agree to Murf cloning it. Murf checks that the recording matches the statement and comes from the same person as the voice sample; if the check fails, clone creation fails. Clones are capped at 1 on Free, 3 on Pay as you go and 5 on Enterprise. Murf also listed its Finch speech-to-text (beta) on AWS Marketplace, so audio and transcripts stay in the customer's own AWS account, and added a zero-retention option for Enterprise streaming transcription. Why it matters: Spoken, speaker-matched consent is stronger evidence than a checkbox, and it is the kind of proof a voice-talent agreement or regulator may ask for. It also adds a production step: talent must record the statement for each clone, which should be built into session scheduling. Running transcription inside an organization's own cloud account, with zero retention, helps when handling confidential pre-release content.",
+      "company": "Murf AI",
+      "impact": "LOW",
+      "whatHappened": "Murf's November 19 API release notes add three changes. Creating a voice clone now requires a short recording of the speaker reading a fixed consent statement saying it is their own voice and that they agree to Murf cloning it. Murf checks that the recording matches the statement and comes from the same person as the voice sample; if the check fails, clone creation fails. Clones are capped at 1 on Free, 3 on Pay as you go and 5 on Enterprise. Murf also listed its Finch speech-to-text (beta) on AWS Marketplace, so audio and transcripts stay in the customer's own AWS account, and added a zero-retention option for Enterprise streaming transcription.",
+      "whyItMatters": "Spoken, speaker-matched consent is stronger evidence than a checkbox, and it is the kind of proof a voice-talent agreement or regulator may ask for. It also adds a production step: talent must record the statement for each clone, which should be built into session scheduling. Running transcription inside an organization's own cloud account, with zero retention, helps when handling confidential pre-release content.",
+      "assessment": "These are documented product changes in Murf's release notes rather than marketing claims, but they are incremental. Finch is in beta and covers English, six European languages and 11 Indian languages, so its coverage is narrow. Murf does not document how well the consent check resists replayed or synthetic recordings."
     }
   ]
 }
